@@ -54,12 +54,13 @@
     
     
             </div>
+        </div>
     </nav>
     
     <!-- navbar is end -->
 
-    <!-- introduce start -->
-    <div class=" mx-auto container">    
+       <!-- introduce start -->
+       <div class=" mx-auto container">    
         <div >    
             <div >    
                 <div class="min-w-full h-64 bg-blue-200 flex items-center justify-center text-black text-2xl">
@@ -67,9 +68,66 @@
                 </div>    
             </div>    
         </div>  
-    </div>  
+      </div>  
         <!-- Introduce end -->
 
 
+        <!-- Quiz Application start -->
+        <section>
+            <div class="max-w-2xl mx-auto mt-10 p-6 bg-green-100 rounded-lg shadow">
+                <h1 class="text-2xl font-bold text-center mb-6">English Quiz Application</h1>
+                
+                <!-- Question -->
+                <div class="mb-4">
+                  <p class="text-lg font-semibold">
+                    1. What is the synonym of "Happy"?
+                  </p>
+                </div>
+              
+                <!-- Options -->
+                <form id="quiz-form">
+                  <div class="form-control">
+                    <label class="label cursor-pointer">
+                      <input type="radio" name="question1" value="Sad" class="radio checked:bg-blue-500" />
+                      <span class="label-text ml-2">Sad</span>
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <label class="label cursor-pointer">
+                      <input type="radio" name="question1" value="Cheerful" class="radio checked:bg-blue-500" />
+                      <span class="label-text ml-2">Cheerful</span>
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <label class="label cursor-pointer">
+                      <input type="radio" name="question1" value="Angry" class="radio checked:bg-blue-500" />
+                      <span class="label-text ml-2">Angry</span>
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <label class="label cursor-pointer">
+                      <input type="radio" name="question1" value="Boring" class="radio checked:bg-blue-500" />
+                      <span class="label-text ml-2">Boring</span>
+                    </label>
+                  </div>
+              
+                  <!-- Submit Button -->
+                  <div class="text-center mt-6">
+                    <button type="button" class="btn btn-primary" id="submit-btn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+              
+              <!-- Results Section -->
+              <div class="max-w-2xl mx-auto mt-6 p-4 bg-green-100 text-green-900 rounded-lg hidden" id="result-section">
+                <p class="font-semibold">Correct Answer: Cheerful</p>
+                <p>Your score: <span id="score">0</span>/1</p>
+              </div>
+        </section>
+        <!-- Quiz Application end -->
+
+<script src="js/quizApplication.js"></script>
 </body>
 </html>
