@@ -243,9 +243,70 @@
           </section>
         <!-- Habbit tracker End -->
 
-          
+        <!-- speaking dashboard start -->
+        <section class="min-h-screen flex items-center justify-center mt-1">
+          <!-- Main Container -->
+          <div class="max-w-4xl p-6 bg-white rounded-lg shadow-lg space-y-6">
+            <h1 class="text-2xl font-bold text-center">English Speaking Dashboard</h1>
+        
+            <!-- Progress Tracker -->
+            <div class="space-y-6">
+              <!-- Speaking Progress -->
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-semibold">📢 Speaking</h2>
+                <div>
+                  <input type="number" id="speaking-input" class="input input-bordered w-20 mr-4" placeholder="0-10" min="0"
+                    max="10" />
+                  <button id="speaking-btn" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+              <progress id="speaking-progress" class="progress progress-primary w-full" value="0" max="10"></progress>
+              <p id="speaking-feedback" class="text-center text-gray-600">Rate your speaking from 0 to 10</p>
+        
+              <!-- Reading Progress -->
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-semibold">📚 Reading</h2>
+                <div>
+                  <input type="number" id="reading-input" class="input input-bordered w-20 mr-4" placeholder="0-10" min="0"
+                    max="10" />
+                  <button id="reading-btn" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+              <progress id="reading-progress" class="progress progress-secondary w-full" value="0" max="10"></progress>
+              <p id="reading-feedback" class="text-center text-gray-600">Rate your reading from 0 to 10</p>
+        
+              <!-- Listening Progress -->
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-semibold">🎧 Listening</h2>
+                <div>
+                  <input type="number" id="listening-input" class="input input-bordered w-20 mr-4" placeholder="0-10" min="0"
+                    max="10" />
+                  <button id="listening-btn" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+              </div>
+              <progress id="listening-progress" class="progress progress-accent w-full" value="0" max="10"></progress>
+              <p id="listening-feedback" class="text-center text-gray-600">Rate your listening from 0 to 10</p>
+            </div>
+        
+            <!-- Overall Performance -->
+            <div class="mt-6">
+              <button id="overall-btn" class="btn btn-success w-full">Check Overall Performance</button>
+              <p id="overall-performance" class="text-center text-xl mt-4 text-gray-700 font-semibold"></p>
+            </div>
+        
+            <!-- Reset Button -->
+            <div class="mt-6">
+              <button id="clear-btn" class="btn btn-error w-full">Clear</button>
+            </div>
+          </div>
+        </section>
+        <!-- speaking dashboard end -->
+         
+        
+        <script src="js/speakingDashboard.js"></script>
         <script src="js/quizApplication.js"></script>
         <script src="js/countDown.js"></script>
         <script src="js/habbitTracker.js"></script>
+       
 </body>
 </html>
