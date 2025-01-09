@@ -1,6 +1,5 @@
 const translateButton = document.getElementById("translateButton");
 const cleanButton = document.getElementById("cleanBtn");
-
 const englishInput = document.getElementById("englishInput");
 const spanishTranslation = document.getElementById("spanishTranslation");
 const frenchTranslation = document.getElementById("frenchTranslation");

@@ -392,8 +392,39 @@
           </section>
           <!-- language translator end -->
 
+          <!-- Markdown Editor start -->
+           <section>
+            <div class="container mx-auto p-4">
+              <div class="card w-full max-w-3xl mx-auto bg-white shadow-lg p-6 rounded-md">
+                <h1 class="text-2xl font-bold text-center mb-4">Markdown Editor</h1>
+          
+                <!-- Input Section -->
+                <div class="form-control mb-4">
+                  <label class="label">
+                    <span class="label-text">Write Markdown:</span>
+                  </label>
+                  <textarea id="markdownInput" class="textarea textarea-bordered w-full h-40" placeholder="Type markdown content here..."></textarea>
+                </div>
+          
+                <!-- Preview Button -->
+                <button id="previewButton" class="btn btn-primary w-full mb-4">Preview</button>
+          
+                <!-- Clear Button -->
+                <button id="clearMarkButton" class="btn btn-secondary w-full mb-4">Clear</button>
+          
+                <!-- Preview Section -->
+                <div id="previewSection" class="p-4 border rounded bg-gray-50">
+                  <h2 class="text-xl font-semibold mb-2">Preview:</h2>
+                  <div id="previewContent" class="prose"></div>
+                </div>
+              </div>
+            </div>
+           </section>
+           <!-- Markdown Editor end -->
 
 
+           <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+           <script src="js/markDown.js"></script>
           <script src="js/translation.js"></script>
          <script src="js/chatApplication.js"></script>
          <script src="js/recipeFinder.js"></script>
