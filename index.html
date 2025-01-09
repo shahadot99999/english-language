@@ -359,7 +359,42 @@
            </section>
          <!-- Chat boot end -->
 
+         <!-- Language translator start -->
+          <section>
+            <div class="container mx-auto p-4">
+              <div class="card w-full max-w-lg mx-auto bg-white shadow-lg p-6 rounded-md">
+                <h1 class="text-2xl font-bold text-center mb-4">Language Translator</h1>
+          
+                <!-- Input Section -->
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Enter text in English:</span>
+                  </label>
+                  <input id="englishInput" type="text" placeholder="Type something..." 
+                    class="input input-bordered w-full" />
+                </div>
+          
+                <!-- Translate Button -->
+                <button id="translateButton" class="btn btn-primary mt-4 w-full">Translate</button>
+                <button id="cleanBtn" class="btn btn-secondary flex-1">Clean</button>
+          
+                <!-- Results Section -->
+                <div id="results" class="mt-6">
+                  <h2 class="text-xl font-semibold">Translations:</h2>
+                  <div class="mt-2">
+                    <p><strong>Spanish:</strong> <span id="spanishTranslation" class="text-gray-700"></span></p>
+                    <p><strong>French:</strong> <span id="frenchTranslation" class="text-gray-700"></span></p>
+                    <p><strong>German:</strong> <span id="germanTranslation" class="text-gray-700"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- language translator end -->
 
+
+
+          <script src="js/translation.js"></script>
          <script src="js/chatApplication.js"></script>
          <script src="js/recipeFinder.js"></script>
         <script src="js/speakingDashboard.js"></script>
